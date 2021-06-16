@@ -1,6 +1,6 @@
 package it.luca.data.annotation;
 
-import it.luca.data.generator.functions.Generator;
+import it.luca.data.generator.function.DataSupplier;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -12,5 +12,5 @@ import java.time.LocalDateTime;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RandomDateTime {
 
-    Class<? extends Generator<LocalDateTime>> generator();
+    Class<? extends DataSupplier<LocalDateTime>> generator();
 }

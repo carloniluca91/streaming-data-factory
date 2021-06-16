@@ -1,4 +1,4 @@
-package it.luca.data.generator.functions;
+package it.luca.data.generator.function;
 
 import it.luca.data.generator.enumeration.Signum;
 import lombok.AllArgsConstructor;
@@ -9,7 +9,7 @@ import java.time.temporal.ChronoUnit;
 
 @Getter
 @AllArgsConstructor
-public abstract class PlusOrMinusTime extends Generator<LocalDateTime> {
+public abstract class PlusOrMinusTime extends DataSupplier<LocalDateTime> {
 
     protected final Signum signum;
     protected final int temporalAmount;

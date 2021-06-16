@@ -27,6 +27,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 
 		<jdbi.version>3.20.1</jdbi.version>
+		<java.utils.version>0.2.0</java.utils.version>
 	</properties>
 
 	<build>
@@ -80,6 +81,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>it.luca</groupId>
+			<artifactId>java-utils</artifactId>
+			<version>${java.utils.version}</version>
 		</dependency>
 	</dependencies>
 

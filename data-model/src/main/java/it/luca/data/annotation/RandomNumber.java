@@ -12,6 +12,4 @@ public @interface RandomNumber {
     int min();
 
     int max();
-
-    Class<?> outputClass();
 }
