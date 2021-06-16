@@ -1,0 +1,7 @@
+.idea/*
+.mvn/*
+*.iml
+
+annotations/target/*
+application/target/*
+data-model/target/*
