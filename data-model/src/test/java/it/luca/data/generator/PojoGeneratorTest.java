@@ -1,8 +1,7 @@
 package it.luca.data.generator;
 
+import it.luca.data.generator.pojo.PojoGenerator;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PojoGeneratorTest {
 

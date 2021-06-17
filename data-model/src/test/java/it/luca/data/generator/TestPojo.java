@@ -1,6 +1,7 @@
 package it.luca.data.generator;
 
 import it.luca.data.annotation.RandomDateTime;
+import it.luca.data.annotation.RandomPojo;
 import it.luca.data.annotation.RandomValue;
 import it.luca.data.generator.function.Now;
 import lombok.Data;
@@ -17,4 +18,7 @@ public class TestPojo {
 
     @RandomValue(values = {"STENI_INJ", "STENI_WTH"})
     private String codiceRemi;
+
+    @RandomPojo(pojoClass = TestSubPojo.class)
+    private TestSubPojo testSubPojo;
 }

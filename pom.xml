@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>it.luca</groupId>
+	<groupId>it.luca.data</groupId>
 	<artifactId>data-factory</artifactId>
 	<version>0.1.0</version>
 	<description>Data Factory - Spring Boot application for generating random test data</description>

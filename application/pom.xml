@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>it.luca</groupId>
+        <groupId>it.luca.data</groupId>
         <artifactId>data-factory</artifactId>
         <version>0.1.0</version>
     </parent>
@@ -25,6 +25,12 @@
     </build>
 
     <dependencies>
+
+        <dependency>
+            <groupId>it.luca.data</groupId>
+            <artifactId>data-model</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
 
         <!-- Jdbi modules -->
         <dependency>

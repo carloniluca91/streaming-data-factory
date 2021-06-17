@@ -11,5 +11,5 @@ public abstract class DataAnnotationSupplier<T extends Annotation, R> {
 
     protected final T annotation;
 
-    public abstract R apply();
+    public abstract R apply() throws Exception;
 }

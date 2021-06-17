@@ -7,11 +7,7 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RandomNumber {
+public @interface RandomPojo {
 
-    Class<? extends Number> outClass();
-
-    int min();
-
-    int max();
+    Class<?> pojoClass();
 }

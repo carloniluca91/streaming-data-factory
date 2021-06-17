@@ -1,6 +1,6 @@
 package it.luca.data.generator.function;
 
-import it.luca.data.generator.enumeration.Signum;
+import it.luca.data.enumeration.Signum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -9,7 +9,7 @@ import java.time.temporal.ChronoUnit;
 
 @Getter
 @AllArgsConstructor
-public abstract class PlusOrMinusTime extends DataSupplier<LocalDateTime> {
+public abstract class PlusOrMinusTime implements DataSupplier<LocalDateTime> {
 
     protected final Signum signum;
     protected final int temporalAmount;

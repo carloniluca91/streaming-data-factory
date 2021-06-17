@@ -1,4 +1,4 @@
-package it.luca.data.generator.enumeration;
+package it.luca.data.enumeration;
 
 public enum Signum {
 
