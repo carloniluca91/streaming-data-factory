@@ -16,22 +16,20 @@ public abstract class SampleGenerationRecord {
 
     private final Timestamp sampleGenerationTs = Timestamp.valueOf(now());
     private final Date sampleGenerationDt = Date.valueOf(now().toLocalDate());
-    private final String dataFlowId;
-    private final String dataFlowType;
-    private final String dataFlowClass;
-    private final String dataFlowUrl;
+    private final String dataflowId;
+    private final String dataflowType;
+    private final String dataflowClass;
+    private final String dataflowUrl;
     private final String sampleGenerationCode;
     private final String exceptionClass;
     private final String exceptionMessage;
-    private final Timestamp insertTs = Timestamp.valueOf(now());
-    private final Date insertDt = Date.valueOf(now().toLocalDate());
 
     public SampleGenerationRecord(DataFlowModel<?> dataFlowModel, Exception exception) {
 
-        this.dataFlowId = dataFlowModel.getDataFlowId().name();
-        this.dataFlowType = dataFlowModel.getType().name();
-        this.dataFlowClass = dataFlowModel.getTClass().getName();
-        this.dataFlowUrl = dataFlowModel.getUrl();
+        this.dataflowId = dataFlowModel.getDataFlowId().name();
+        this.dataflowType = dataFlowModel.getType().name();
+        this.dataflowClass = dataFlowModel.getTClass().getName();
+        this.dataflowUrl = dataFlowModel.getUrl();
         this.sampleGenerationCode = (isPresent(exception) ? SampleGenerationCode.KO : SampleGenerationCode.OK).name();
         this.exceptionClass = orNull(exception, x -> x.getClass().getName());
         this.exceptionMessage = orNull(exception, Throwable::getMessage);

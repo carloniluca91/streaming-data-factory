@@ -3,10 +3,12 @@ package it.luca.data.jdbc.dao;
 import it.luca.data.jdbc.dto.SampleGenerationRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.jdbi.v3.core.Jdbi;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,16 +17,19 @@ import java.sql.SQLException;
 @Component
 public class PostgresDao {
 
-    @Value("${}")
+    @Autowired
+    private DataSource dataSource;
+
+    //@Value("${}")
     private String jdbcUrl;
 
-    @Value("${}")
-    private String user;
+    //@Value("${}")
+    //private String user;
 
-    @Value("${}")
+    //@Value("${}")
     private String password;
 
-    @Value("${}")
+    @Value("${postgres.logTable.name}")
     private String sampleGenerationLogTable;
 
     private Jdbi jdbi;
@@ -32,8 +37,8 @@ public class PostgresDao {
     @PostConstruct
     private void initJdbi() throws SQLException {
 
-        Connection connection = DriverManager.getConnection(jdbcUrl, user, password);
-        jdbi = Jdbi.create(connection);
+        //Connection connection = DriverManager.getConnection(jdbcUrl, user, password);
+        jdbi = Jdbi.create(dataSource);
         log.info("Successfully initialized {} instance", jdbi.getClass().getSimpleName());
     }
 
