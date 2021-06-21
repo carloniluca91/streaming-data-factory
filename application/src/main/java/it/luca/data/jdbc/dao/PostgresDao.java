@@ -3,15 +3,13 @@ package it.luca.data.jdbc.dao;
 import it.luca.data.jdbc.dto.SampleGenerationRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.jdbi.v3.core.Jdbi;
+import org.jdbi.v3.postgres.PostgresPlugin;
+import org.jdbi.v3.sqlobject.SqlObjectPlugin;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 @Slf4j
 @Component
@@ -20,25 +18,15 @@ public class PostgresDao {
     @Autowired
     private DataSource dataSource;
 
-    //@Value("${}")
-    private String jdbcUrl;
-
-    //@Value("${}")
-    //private String user;
-
-    //@Value("${}")
-    private String password;
-
-    @Value("${postgres.logTable.name}")
-    private String sampleGenerationLogTable;
-
     private Jdbi jdbi;
 
     @PostConstruct
-    private void initJdbi() throws SQLException {
+    private void initJdbi() {
 
-        //Connection connection = DriverManager.getConnection(jdbcUrl, user, password);
-        jdbi = Jdbi.create(dataSource);
+        jdbi = Jdbi.create(dataSource)
+                .installPlugin(new SqlObjectPlugin())
+                .installPlugin(new PostgresPlugin());
+
         log.info("Successfully initialized {} instance", jdbi.getClass().getSimpleName());
     }
 
@@ -46,11 +34,11 @@ public class PostgresDao {
 
         String recordClass = record.getClass().getSimpleName();
         try {
-            log.info("Saving instance of {} into table {}", recordClass, sampleGenerationLogTable);
-            jdbi.useHandle(handle -> handle.attach(SampleGenerationRecordDao.class).save(sampleGenerationLogTable, record));
-            log.info("Successfully saved instance of {} into table {}", recordClass, sampleGenerationLogTable);
+            log.info("Saving instance of {}", recordClass);
+            jdbi.useHandle(handle -> handle.attach(SampleGenerationRecordDao.class).save(record));
+            log.info("Successfully saved instance of {}", recordClass);
         } catch (Exception e) {
-            log.error("Caught exception while saving instance of {} into table {}. Stack trace: ", recordClass, sampleGenerationLogTable, e);
+            log.error("Caught exception while saving instance of {}. Stack trace: ", recordClass, e);
         }
     }
 }

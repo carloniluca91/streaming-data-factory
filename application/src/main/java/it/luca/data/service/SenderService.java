@@ -5,7 +5,7 @@ import it.luca.data.jdbc.dao.PostgresDao;
 import it.luca.data.jdbc.dto.FailedSampleGenerationRecord;
 import it.luca.data.jdbc.dto.SampleGenerationRecord;
 import it.luca.data.jdbc.dto.SuccessfulSampleGenerationRecord;
-import it.luca.data.model.common.DataFlowModel;
+import it.luca.data.model.common.DataflowModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,7 @@ public class SenderService {
     @Autowired
     private PostgresDao dao;
 
-    public <T> void sendDataFor(DataFlowModel<T> dataFlowModel) {
+    public <T> void sendDataFor(DataflowModel<T> dataFlowModel) {
 
         SampleGenerationRecord sampleGenerationRecord;
         String dataFlowId = dataFlowModel.getDataFlowId().name();

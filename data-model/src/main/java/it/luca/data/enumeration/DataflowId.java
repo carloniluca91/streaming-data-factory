@@ -1,6 +1,6 @@
 package it.luca.data.enumeration;
 
-public enum DataFlowId {
+public enum DataflowId {
 
     WEBDISP
 }

@@ -52,7 +52,7 @@
 
 		<jdbi.version>3.20.1</jdbi.version>
 		<java.utils.version>0.3.0</java.utils.version>
-		<jdbc.url>jdbc:postgresql://localhost:5432/${jdbc.user}</jdbc.url>
+		<jdbc.url>jdbc:postgresql://localhost:5432/${jdbc.user}?currentSchema=log</jdbc.url>
 		<jdbc.log.table>t_sample_generation_log</jdbc.log.table>
 	</properties>
 

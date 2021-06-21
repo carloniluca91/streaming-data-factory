@@ -1,6 +1,6 @@
 package it.luca.data.enumeration;
 
-public enum DataFlowType {
+public enum DataflowType {
 
     JSON,
     XML

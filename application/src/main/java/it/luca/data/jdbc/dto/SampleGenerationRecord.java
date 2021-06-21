@@ -1,7 +1,7 @@
 package it.luca.data.jdbc.dto;
 
 import it.luca.data.enumeration.SampleGenerationCode;
-import it.luca.data.model.common.DataFlowModel;
+import it.luca.data.model.common.DataflowModel;
 import lombok.Getter;
 
 import java.sql.Date;
@@ -24,7 +24,7 @@ public abstract class SampleGenerationRecord {
     private final String exceptionClass;
     private final String exceptionMessage;
 
-    public SampleGenerationRecord(DataFlowModel<?> dataFlowModel, Exception exception) {
+    public SampleGenerationRecord(DataflowModel<?> dataFlowModel, Exception exception) {
 
         this.dataflowId = dataFlowModel.getDataFlowId().name();
         this.dataflowType = dataFlowModel.getType().name();

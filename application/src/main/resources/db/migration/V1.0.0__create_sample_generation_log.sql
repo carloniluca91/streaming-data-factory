@@ -1,7 +1,7 @@
--- create sequence for request table
+-- create sequence for log table
 CREATE SEQUENCE IF NOT EXISTS sample_id;
 
--- request table
+-- log table
 CREATE TABLE IF NOT EXISTS @jdbc.log.table@ (
 
     sample_id INT NOT NULL DEFAULT NEXTVAL('sample_id'),
