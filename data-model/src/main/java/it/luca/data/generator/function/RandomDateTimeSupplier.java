@@ -12,6 +12,6 @@ public class RandomDateTimeSupplier extends DataAnnotationSupplier<RandomDateTim
 
     @Override
     public LocalDateTime apply() throws Exception {
-        return annotation.generator().newInstance().apply();
+        return annotation.supplier().newInstance().apply();
     }
 }

@@ -7,11 +7,9 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RandomNumber {
+public @interface RandomSequence {
 
-    Class<? extends Number> as();
+    Class<?> of();
 
-    int min();
-
-    int max();
+    int size();
 }

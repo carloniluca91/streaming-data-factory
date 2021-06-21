@@ -23,7 +23,7 @@ public class Application implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 
-		log.info("Name = {}", String.join(", ", dataFlows));
+		log.info("Input dataFlow(s) = {}", String.join(", ", dataFlows));
 
 	}
 }

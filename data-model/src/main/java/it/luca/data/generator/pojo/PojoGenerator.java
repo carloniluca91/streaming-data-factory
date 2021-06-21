@@ -1,9 +1,6 @@
 package it.luca.data.generator.pojo;
 
-import it.luca.data.annotation.RandomDateTime;
-import it.luca.data.annotation.RandomNumber;
-import it.luca.data.annotation.RandomPojo;
-import it.luca.data.annotation.RandomValue;
+import it.luca.data.annotation.*;
 import it.luca.data.exception.MissingDataAnnotationException;
 import it.luca.data.exception.MissingNoArgConstructorException;
 import it.luca.data.generator.function.RandomDateTimeSupplier;
@@ -15,6 +12,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -69,6 +67,14 @@ public class PojoGenerator {
             setterObject = new RandomValueSupplier(field.getAnnotation(RandomValue.class)).apply();
         } else if (isAnnotatedWith.test(RandomPojo.class)) {
             setterObject = generate(field.getAnnotation(RandomPojo.class).pojoClass());
+        } else if (isAnnotatedWith.test(RandomSequence.class)) {
+            List<Object> sequence = new ArrayList<>();
+            RandomSequence randomSequence = field.getAnnotation(RandomSequence.class);
+            for (int i = 0; i < randomSequence.size(); i ++) {
+                sequence.add(generate(randomSequence.of()));
+            }
+
+            setterObject = sequence;
         } else {
             throw new MissingDataAnnotationException(field);
         }

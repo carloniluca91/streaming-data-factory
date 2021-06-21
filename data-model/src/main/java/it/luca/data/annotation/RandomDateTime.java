@@ -12,5 +12,5 @@ import java.time.LocalDateTime;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RandomDateTime {
 
-    Class<? extends DataSupplier<LocalDateTime>> generator();
+    Class<? extends DataSupplier<LocalDateTime>> supplier();
 }

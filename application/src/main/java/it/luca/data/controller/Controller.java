@@ -1,17 +1,22 @@
 package it.luca.data.controller;
 
-import it.luca.data.model.DataFlowModel;
-import lombok.AllArgsConstructor;
+import it.luca.data.model.common.DataFlowModel;
+import it.luca.data.model.webdisp.WebdispFlowModel;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor
+@Slf4j
+@Component
 public class Controller {
 
-    private final List<String> dataFlows;
+    @Value("${stream.webdisp.url}")
+    private String webdispUrl;
 
-    public void run() {
+    public void run(List<String> dataFlows) {
 
         List<DataFlowModel<?>> dataFlowModels = new ArrayList<>();
         dataFlows.forEach(s -> {
@@ -19,7 +24,7 @@ public class Controller {
             DataFlowModel<?> dataFlowModel;
             switch (s) {
 
-                case "WEBDISP": dataFlowModel = null; break;
+                case "WEBDISP": dataFlowModel = new WebdispFlowModel(webdispUrl); break;
                 default: throw new IllegalArgumentException();
             }
 
