@@ -11,5 +11,5 @@ public @interface RandomSequence {
 
     Class<?> of();
 
-    int size();
+    int maxSize();
 }

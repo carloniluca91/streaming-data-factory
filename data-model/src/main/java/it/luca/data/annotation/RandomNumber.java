@@ -9,9 +9,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RandomNumber {
 
-    Class<? extends Number> as();
-
     int min();
 
     int max();
+
+    Class<? extends Number> as();
 }

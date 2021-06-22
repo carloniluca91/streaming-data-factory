@@ -12,6 +12,13 @@ public class RandomNumberSupplier extends DataAnnotationSupplier<RandomNumber, N
     public Number apply() {
 
         int delta = annotation.max() - annotation.min();
-        return annotation.as().cast(annotation.min() + (delta * Math.random()));
+        double randomNumber = annotation.min() + (delta * Math.random());
+        if (annotation.as().equals(Integer.class)) {
+            return (int) randomNumber;
+        } else if (annotation.as().equals(Float.class)) {
+            return (float) randomNumber;
+        } else {
+            return randomNumber;
+        }
     }
 }

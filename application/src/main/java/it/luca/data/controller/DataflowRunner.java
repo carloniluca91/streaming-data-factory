@@ -1,42 +1,41 @@
 package it.luca.data.controller;
 
-import it.luca.data.model.common.DataflowModel;
-import it.luca.data.model.webdisp.WebdispflowModel;
+import it.luca.data.configuration.ApplicationProperties;
+import it.luca.data.model.common.Dataflow;
 import it.luca.data.service.SenderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
+import static it.luca.utils.functional.Stream.filter;
 
 @Slf4j
 @Component
 public class DataflowRunner {
 
-    @Value("${dataflow.webdisp.url}")
-    private String webdispUrl;
-
     @Autowired
     private SenderService service;
 
-    public void run(List<String> dataFlows) throws InterruptedException {
+    @Autowired
+    private ApplicationProperties applicationProperties;
 
-        List<DataflowModel<?>> dataflowModels = new ArrayList<>();
-        dataFlows.forEach(s -> {
+    @SuppressWarnings("all")
+    public void run(List<String> dataFlowsIds) throws InterruptedException {
 
-            DataflowModel<?> dataFlowModel;
-            switch (s) {
+        List<Dataflow<?>> dataflows = filter(applicationProperties.getDataflows(), x -> dataFlowsIds.contains(x.getId()));
+        long sleepTime = applicationProperties.getSleepTimeInSeconds() * 1000;
+        Random random = new Random();
+        while (true) {
+            Dataflow<?> dataFlowToRun = dataflows.get(random.nextInt(dataflows.size()));
+            log.info("Randomly picked dataflow {}", dataFlowToRun.getId());
+            service.sendDataFor(dataFlowToRun);
+            log.info("Putting the circus to sleept for {} second(s)", applicationProperties.getSleepTimeInSeconds());
+            Thread.sleep(sleepTime);
+            log.info("Waking up the circus once again");
+        }
 
-                case "WEBDISP": dataFlowModel = new WebdispflowModel(webdispUrl); break;
-                default: throw new IllegalArgumentException();
-            }
-
-            dataflowModels.add(dataFlowModel);
-        });
-
-        service.sendDataFor(dataflowModels.get(0));
-        Thread.sleep(10000);
     }
 }

@@ -2,7 +2,7 @@ package it.luca.data.model.webdisp;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import it.luca.data.annotation.RandomDateTime;
 import it.luca.data.annotation.RandomNumber;
 import it.luca.data.annotation.RandomValue;
@@ -24,12 +24,12 @@ public class WebdispNomina {
     private Double pcs;
 
     @RandomDateTime(supplier = NextClockHour.class)
-    @JsonSerialize(using = LocalDateSerializer.class)
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = DatePattern.WEBDISP_DATA_DECORRENZA)
     private LocalDateTime dataDecorrenza;
 
     @RandomDateTime(supplier = LastClockHour.class)
-    @JsonSerialize(using = LocalDateSerializer.class)
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = DatePattern.WEBDISP_DATA_ELABORAZIONE)
     private LocalDateTime dataElaborazione;
 

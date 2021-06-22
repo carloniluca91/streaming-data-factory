@@ -12,10 +12,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Predicate;
 
 import static it.luca.utils.functional.Optional.isPresent;
@@ -68,9 +65,11 @@ public class PojoGenerator {
         } else if (isAnnotatedWith.test(RandomPojo.class)) {
             setterObject = generate(field.getAnnotation(RandomPojo.class).pojoClass());
         } else if (isAnnotatedWith.test(RandomSequence.class)) {
-            List<Object> sequence = new ArrayList<>();
+
             RandomSequence randomSequence = field.getAnnotation(RandomSequence.class);
-            for (int i = 0; i < randomSequence.size(); i ++) {
+            int size = new Random().nextInt(randomSequence.maxSize()) + 1;
+            List<Object> sequence = new ArrayList<>();
+            for (int i = 0; i < size; i ++) {
                 sequence.add(generate(randomSequence.of()));
             }
 

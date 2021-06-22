@@ -1,11 +1,11 @@
 package it.luca.data.jdbc.dto;
 
-import it.luca.data.model.common.DataflowModel;
+import it.luca.data.model.common.Dataflow;
 
 public class FailedSampleGenerationRecord extends SampleGenerationRecord {
 
-    public FailedSampleGenerationRecord(DataflowModel<?> dataFlowModel, Exception exception) {
+    public FailedSampleGenerationRecord(Dataflow<?> dataflow, Exception exception) {
 
-        super(dataFlowModel, exception);
+        super(dataflow, exception);
     }
 }
