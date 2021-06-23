@@ -1,6 +1,6 @@
 package it.luca.data;
 
-import it.luca.data.controller.DataflowRunner;
+import it.luca.data.controller.DataflowController;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,7 +19,7 @@ public class Application implements ApplicationRunner {
 	private List<String> dataflows;
 
 	@Autowired
-	private DataflowRunner dataflowRunner;
+	private DataflowController dataflowController;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
@@ -29,6 +29,6 @@ public class Application implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws InterruptedException {
 
 		log.info("Found {} dataflow(s) to trigger ({})", dataflows.size(), String.join(", ", dataflows));
-		dataflowRunner.run(dataflows);
+		dataflowController.run(dataflows);
 	}
 }

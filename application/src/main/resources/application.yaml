@@ -5,12 +5,21 @@ spring:
     password: @jdbc.password@
     url: @jdbc.url@
 
+server:
+  port: 8081
+
 postgres:
   logTable:
     name: @jdbc.log.table@
 
 application:
-  sleepTimeInSeconds: 30
+  sleepTime:
+    beforeSend:
+      amount: 30
+      unit: seconds
+    afterSend:
+      amount: 30
+      unit: seconds
   dataflows:
     -
       id: WEBDISP

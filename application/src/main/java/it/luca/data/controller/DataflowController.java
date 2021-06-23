@@ -1,5 +1,6 @@
 package it.luca.data.controller;
 
+import it.luca.data.configuration.AmountAndUnit;
 import it.luca.data.configuration.ApplicationProperties;
 import it.luca.data.model.common.Dataflow;
 import it.luca.data.service.SenderService;
@@ -14,7 +15,7 @@ import static it.luca.utils.functional.Stream.filter;
 
 @Slf4j
 @Component
-public class DataflowRunner {
+public class DataflowController {
 
     @Autowired
     private SenderService service;
@@ -25,17 +26,18 @@ public class DataflowRunner {
     @SuppressWarnings("all")
     public void run(List<String> dataFlowsIds) throws InterruptedException {
 
-        List<Dataflow<?>> dataflows = filter(applicationProperties.getDataflows(), x -> dataFlowsIds.contains(x.getId()));
-        long sleepTime = applicationProperties.getSleepTimeInSeconds() * 1000;
         Random random = new Random();
+        List<Dataflow<?>> dataflows = filter(applicationProperties.getDataflows(), x -> dataFlowsIds.contains(x.getId()));
+        AmountAndUnit beforeSend = applicationProperties.getSleepTime().getBeforeSend();
+        AmountAndUnit afterSend = applicationProperties.getSleepTime().getAfterSend();
         while (true) {
             Dataflow<?> dataFlowToRun = dataflows.get(random.nextInt(dataflows.size()));
-            log.info("Randomly picked dataflow {}", dataFlowToRun.getId());
+            log.info("Randomly picked dataflow {}. Waiting for beforeSend sleep time to end ({})", dataFlowToRun.getId(), beforeSend);
+            Thread.sleep(beforeSend.inMilliSeconds());
             service.sendDataFor(dataFlowToRun);
-            log.info("Putting the circus to sleept for {} second(s)", applicationProperties.getSleepTimeInSeconds());
-            Thread.sleep(sleepTime);
+            log.info("Waiting for afterSend sleep time to end ({})", afterSend);
+            Thread.sleep(afterSend.inMilliSeconds());
             log.info("Waking up the circus once again");
         }
-
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 @ConfigurationProperties(prefix = "application")
 public class ApplicationProperties {
 
-    private int sleepTimeInSeconds;
+    private SleepTime sleepTime;
 
     private List<Dataflow<?>> dataflows;
 }
