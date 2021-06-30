@@ -46,7 +46,7 @@ public class JarvisPayload {
     private LocalDateTime giornoGas;
 
     @RandomSequence(of = JarvisCiclo.class, maxSize = 10)
-    @JacksonXmlElementWrapper(localName = "cicli")
+    @JacksonXmlElementWrapper(localName = "listaCicli")
     @JacksonXmlProperty(localName = "ciclo")
     private List<JarvisCiclo> cicli;
 }

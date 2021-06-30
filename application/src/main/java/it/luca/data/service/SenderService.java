@@ -35,7 +35,7 @@ public class SenderService {
             RestTemplate restTemplate = new RestTemplateBuilder().build();
             DataSourceResponseDto response = restTemplate.postForObject(dataflow.getUrl(), serializedInstance, DataSourceResponseDto.class);
             if (isPresent(response)) {
-                log.info("Response for dataflow {}:\n{}", dataflowId, response);
+                log.info("Response for dataflow {}:\n\n{}", dataflowId, response);
             } else {
                 String responseClass = DataSourceResponseDto.class.getSimpleName();
                 log.warn("Unable to deserialize response from URL {} as a instance of {}", dataflow.getUrl(), responseClass);
