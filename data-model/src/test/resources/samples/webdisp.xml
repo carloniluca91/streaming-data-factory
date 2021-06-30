@@ -1,44 +1,29 @@
 <root>
-  <dataOraInvio>30/06/2021 15:02:27</dataOraInvio>
+  <dataOraInvio>30/06/2021 15:55:44</dataOraInvio>
   <nomine>
     <nomina>
       <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.156466262675744</pcs>
+      <pcs>10.11836133561647</pcs>
       <dataDecorrenza>30/06/2021 16:00:00</dataDecorrenza>
       <dataElaborazione>30/06/2021 15:00:00</dataElaborazione>
-      <valoreVolume>239669.17097381214</valoreVolume>
+      <valoreVolume>337363.6623035017</valoreVolume>
       <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>658404.5890882999</valoreEnergia>
-      <codiceRemi>STENI_WTH</codiceRemi>
-      <descrizioneRemi>Stogit (estrazione)</descrizioneRemi>
-      <descrizionePunto>STOGIT EROGAZIONE</descrizionePunto>
-      <tipoNomina>PRE</tipoNomina>
-      <cicloNomina>C10</cicloNomina>
-      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
-    </nomina>
-    <nomina>
-      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.081265519683464</pcs>
-      <dataDecorrenza>30/06/2021 16:00:00</dataDecorrenza>
-      <dataElaborazione>30/06/2021 15:00:00</dataElaborazione>
-      <valoreVolume>362848.38603515463</valoreVolume>
-      <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>963706.9285704105</valoreEnergia>
+      <valoreEnergia>237980.77189810542</valoreEnergia>
       <codiceRemi>STENI_INJ</codiceRemi>
       <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
-      <descrizionePunto>STOGIT EROGAZIONE</descrizionePunto>
-      <tipoNomina>PRE</tipoNomina>
-      <cicloNomina>C01</cicloNomina>
+      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <tipoNomina>POST</tipoNomina>
+      <cicloNomina>C08</cicloNomina>
       <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
     </nomina>
     <nomina>
       <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.649296333320155</pcs>
+      <pcs>10.764596445152876</pcs>
       <dataDecorrenza>30/06/2021 16:00:00</dataDecorrenza>
       <dataElaborazione>30/06/2021 15:00:00</dataElaborazione>
-      <valoreVolume>745606.1687369273</valoreVolume>
+      <valoreVolume>432430.9931522127</valoreVolume>
       <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>658071.5285329078</valoreEnergia>
+      <valoreEnergia>156305.8487055556</valoreEnergia>
       <codiceRemi>STENI_INJ</codiceRemi>
       <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
       <descrizionePunto>STOGIT EROGAZIONE</descrizionePunto>

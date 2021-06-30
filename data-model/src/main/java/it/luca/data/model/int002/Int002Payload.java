@@ -9,5 +9,5 @@ import java.util.List;
 public class Int002Payload {
 
     @RandomSequence(of = Int002Ciclo.class, maxSize = 50)
-    private List<Int002Ciclo> listaCicli;
+    private List<Int002Ciclo> cicli;
 }
