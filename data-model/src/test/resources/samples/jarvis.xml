@@ -1,0 +1,38 @@
+<root>
+  <ambitoFlusso>Stoccaggio</ambitoFlusso>
+  <nomeFlusso>INT006</nomeFlusso>
+  <impresaMittente>1713307</impresaMittente>
+  <dataDiCreazione>30/06/2021 13:06</dataDiCreazione>
+  <numeroDati>5</numeroDati>
+  <dataProcedura>30/06/2021</dataProcedura>
+  <giornoGas>30/06/2021</giornoGas>
+  <cicli>
+    <ciclo>
+      <cicloDiRiferimento>5</cicloDiRiferimento>
+      <rinominaEnergia>-61226.613986301716</rinominaEnergia>
+      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
+      <limiteMinimoEnergia>80773.98699653556</limiteMinimoEnergia>
+      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
+      <limiteMassimoEnergia>5346.776662956792</limiteMassimoEnergia>
+      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
+    </ciclo>
+    <ciclo>
+      <cicloDiRiferimento>10</cicloDiRiferimento>
+      <rinominaEnergia>98325.87240958231</rinominaEnergia>
+      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
+      <limiteMinimoEnergia>76757.90585543081</limiteMinimoEnergia>
+      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
+      <limiteMassimoEnergia>96650.26379984393</limiteMassimoEnergia>
+      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
+    </ciclo>
+    <ciclo>
+      <cicloDiRiferimento>6</cicloDiRiferimento>
+      <rinominaEnergia>-58655.26915287156</rinominaEnergia>
+      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
+      <limiteMinimoEnergia>87089.90747649179</limiteMinimoEnergia>
+      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
+      <limiteMassimoEnergia>-49478.59906807304</limiteMassimoEnergia>
+      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
+    </ciclo>
+  </cicli>
+</root>

@@ -43,7 +43,7 @@ public class JarvisPayload {
     @RandomDateTime(supplier = GiornoGas.class)
     @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = DatePattern.JARVIS_GIORNO_GAS)
-    private String giornoGas;
+    private LocalDateTime giornoGas;
 
     @RandomSequence(of = JarvisCiclo.class, maxSize = 10)
     @JacksonXmlElementWrapper(localName = "cicli")

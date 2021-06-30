@@ -1,6 +1,7 @@
 package it.luca.data.service;
 
 import it.luca.data.generator.pojo.PojoSerializer;
+import it.luca.data.model.DataSourceResponseDto;
 import it.luca.data.model.common.Dataflow;
 import it.luca.data.generator.pojo.PojoGenerator;
 import it.luca.data.jdbc.dao.PostgresDao;
@@ -10,6 +11,7 @@ import it.luca.data.jdbc.dto.SuccessfulSampleGenerationRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -30,7 +32,9 @@ public class SenderService {
             log.info("Successfully generated random instance for dataflow {}", dataFlowId);
             String serializedInstance = PojoSerializer.objToString(instance, dataflow.getType());
             RestTemplate restTemplate = new RestTemplateBuilder().build();
-            String response = restTemplate.postForObject(dataflow.getUrl(), serializedInstance, String.class);
+            DataSourceResponseDto response = restTemplate.postForObject(dataflow.getUrl(), serializedInstance, DataSourceResponseDto.class);
+
+            // TODO: improve response printing
             log.info("Response: {}", response);
             sampleGenerationRecord = new SuccessfulSampleGenerationRecord(dataflow);
         } catch (Exception e) {
