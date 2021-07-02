@@ -1,34 +1,34 @@
 <root>
-  <dataOraInvio>30/06/2021 15:55:44</dataOraInvio>
+  <dataOraInvio>02/07/2021 10:49:20</dataOraInvio>
   <nomine>
     <nomina>
       <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.11836133561647</pcs>
-      <dataDecorrenza>30/06/2021 16:00:00</dataDecorrenza>
-      <dataElaborazione>30/06/2021 15:00:00</dataElaborazione>
-      <valoreVolume>337363.6623035017</valoreVolume>
+      <pcs>10.49588997669757</pcs>
+      <dataDecorrenza>02/07/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>02/07/2021 10:00:00</dataElaborazione>
+      <valoreVolume>969034.2663746645</valoreVolume>
       <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>237980.77189810542</valoreEnergia>
-      <codiceRemi>STENI_INJ</codiceRemi>
+      <valoreEnergia>954210.3221238904</valoreEnergia>
+      <codiceRemi>STENI_WTH</codiceRemi>
       <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
       <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
       <tipoNomina>POST</tipoNomina>
-      <cicloNomina>C08</cicloNomina>
-      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
+      <cicloNomina>C02</cicloNomina>
+      <tipologiaPunto>Erogazione da stoccaggio</tipologiaPunto>
     </nomina>
     <nomina>
       <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.764596445152876</pcs>
-      <dataDecorrenza>30/06/2021 16:00:00</dataDecorrenza>
-      <dataElaborazione>30/06/2021 15:00:00</dataElaborazione>
-      <valoreVolume>432430.9931522127</valoreVolume>
+      <pcs>10.585286165159335</pcs>
+      <dataDecorrenza>02/07/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>02/07/2021 10:00:00</dataElaborazione>
+      <valoreVolume>627468.969449383</valoreVolume>
       <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>156305.8487055556</valoreEnergia>
+      <valoreEnergia>477145.0399325526</valoreEnergia>
       <codiceRemi>STENI_INJ</codiceRemi>
       <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
-      <descrizionePunto>STOGIT EROGAZIONE</descrizionePunto>
-      <tipoNomina>POST</tipoNomina>
-      <cicloNomina>C11</cicloNomina>
+      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <tipoNomina>PRE</tipoNomina>
+      <cicloNomina>C07</cicloNomina>
       <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
     </nomina>
   </nomine>
