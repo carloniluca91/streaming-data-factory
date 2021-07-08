@@ -15,10 +15,10 @@ postgres:
 application:
   sleepTime:
     beforeSend:
-      amount: 15
+      amount: 30
       unit: seconds
     afterSend:
-      amount: 15
+      amount: 30
       unit: seconds
   dataflows:
     -
