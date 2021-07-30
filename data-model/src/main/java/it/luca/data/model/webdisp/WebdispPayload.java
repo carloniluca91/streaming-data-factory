@@ -26,7 +26,7 @@ public class WebdispPayload {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = DatePattern.WEBDISP_DATA_ORA_INVIO)
     private LocalDateTime dataOraInvio;
 
-    @RandomSequence(of = WebdispNomina.class, maxSize = 4)
+    @RandomSequence(of = WebdispNomina.class, maxSize = 12)
     @JacksonXmlElementWrapper(localName = "nomine")
     @JacksonXmlProperty(localName = "nomina")
     private List<WebdispNomina> nomine;

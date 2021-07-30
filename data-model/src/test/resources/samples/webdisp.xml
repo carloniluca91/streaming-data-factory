@@ -1,65 +1,20 @@
 <root>
-  <dataOraInvio>08/07/2021 16:19:37</dataOraInvio>
+  <dataOraInvio>30/07/2021 17:16:35</dataOraInvio>
   <nomine>
     <nomina>
       <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.002374858300177</pcs>
-      <dataDecorrenza>08/07/2021 17:00:00</dataDecorrenza>
-      <dataElaborazione>08/07/2021 16:00:00</dataElaborazione>
-      <valoreVolume>337087.51602160366</valoreVolume>
+      <pcs>10.244603718449653</pcs>
+      <dataDecorrenza>30/07/2021 18:00:00</dataDecorrenza>
+      <dataElaborazione>30/07/2021 17:00:00</dataElaborazione>
+      <valoreVolume>944221.2481703965</valoreVolume>
       <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>763818.8227748056</valoreEnergia>
+      <valoreEnergia>456218.69334283925</valoreEnergia>
       <codiceRemi>STENI_INJ</codiceRemi>
-      <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
-      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
-      <tipoNomina>PRE</tipoNomina>
-      <cicloNomina>C05</cicloNomina>
-      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
-    </nomina>
-    <nomina>
-      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.864815306000244</pcs>
-      <dataDecorrenza>08/07/2021 17:00:00</dataDecorrenza>
-      <dataElaborazione>08/07/2021 16:00:00</dataElaborazione>
-      <valoreVolume>54591.367618236014</valoreVolume>
-      <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>990462.6038236473</valoreEnergia>
-      <codiceRemi>STENI_WTH</codiceRemi>
-      <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
-      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
-      <tipoNomina>POST</tipoNomina>
-      <cicloNomina>C07</cicloNomina>
-      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
-    </nomina>
-    <nomina>
-      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.409024030590796</pcs>
-      <dataDecorrenza>08/07/2021 17:00:00</dataDecorrenza>
-      <dataElaborazione>08/07/2021 16:00:00</dataElaborazione>
-      <valoreVolume>860007.116438539</valoreVolume>
-      <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>838024.8728530998</valoreEnergia>
-      <codiceRemi>STENI_WTH</codiceRemi>
       <descrizioneRemi>Stogit (estrazione)</descrizioneRemi>
-      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
-      <tipoNomina>POST</tipoNomina>
-      <cicloNomina>C12</cicloNomina>
-      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
-    </nomina>
-    <nomina>
-      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.811362599262798</pcs>
-      <dataDecorrenza>08/07/2021 17:00:00</dataDecorrenza>
-      <dataElaborazione>08/07/2021 16:00:00</dataElaborazione>
-      <valoreVolume>216716.5219988676</valoreVolume>
-      <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>123997.10128141793</valoreEnergia>
-      <codiceRemi>STENI_WTH</codiceRemi>
-      <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
-      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <descrizionePunto>STOGIT EROGAZIONE</descrizionePunto>
       <tipoNomina>PRE</tipoNomina>
-      <cicloNomina>C03</cicloNomina>
-      <tipologiaPunto>Erogazione da stoccaggio</tipologiaPunto>
+      <cicloNomina>C10</cicloNomina>
+      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
     </nomina>
   </nomine>
 </root>
