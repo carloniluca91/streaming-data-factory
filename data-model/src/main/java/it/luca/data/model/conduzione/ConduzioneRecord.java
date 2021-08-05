@@ -30,7 +30,7 @@ public class ConduzioneRecord {
     @RandomNumber(min = 10, max = 11, as = Double.class)
     private Double vpcsRcp;
 
-    @RandomNumber(min = 1, max = 2, as = Integer.class)
+    @RandomNumber(min = 1, max = 3, as = Integer.class)
     private Integer pver;
 
     @RandomNumber(min = 1, max = 13, as = Integer.class)
@@ -44,10 +44,10 @@ public class ConduzioneRecord {
     @RandomValue(values = {"I", "U"})
     private String tipoAggiornamento;
 
-    @RandomValue(values = {"BRUGHERIO", "MINERBIO", "SETTALA SAN P.C.", "SETTALA SAN P.E."})
+    @RandomValue(values = {"BORDOLAN0", "BRUGHERIO", "MINERBIO", "SETTALA SAN P.C.", "SETTALA SAN P.E."})
     private String ccmp;
 
-    @RandomValue(values = {"01769", "01770", "01771", "01772"})
+    @RandomValue(values = {"01769", "01770", "01771", "01772",  "01773"})
     private String ncmp;
 
     @RandomDateTime(supplier = Now.class)

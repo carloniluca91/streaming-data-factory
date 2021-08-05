@@ -3,7 +3,7 @@ package it.luca.data.model.common;
 public final class DatePattern {
 
     public static final String CONDUZIONE_DRE = "yyyy-MM-dd HH:mm:ss";
-    public static final String CONDUZIONE_DRIF = "yyyy-MM-dd HH:mm:00";
+    public static final String CONDUZIONE_DRIF = "yyyy-MM-dd HH:00:00";
 
     public static final String INT002_GIORNO_ORA_RIFERIMENTO = "dd/MM/yyyy HH:mm";
 
