@@ -1,19 +1,79 @@
 <root>
-  <dataOraInvio>30/07/2021 17:16:35</dataOraInvio>
+  <dataOraInvio>05/08/2021 10:11:45</dataOraInvio>
   <nomine>
     <nomina>
       <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
-      <pcs>10.244603718449653</pcs>
-      <dataDecorrenza>30/07/2021 18:00:00</dataDecorrenza>
-      <dataElaborazione>30/07/2021 17:00:00</dataElaborazione>
-      <valoreVolume>944221.2481703965</valoreVolume>
+      <pcs>10.993079392174732</pcs>
+      <dataDecorrenza>05/08/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>05/08/2021 10:00:00</dataElaborazione>
+      <valoreVolume>765007.8229142998</valoreVolume>
       <unitaMisuraVolume>SMC</unitaMisuraVolume>
-      <valoreEnergia>456218.69334283925</valoreEnergia>
-      <codiceRemi>STENI_INJ</codiceRemi>
-      <descrizioneRemi>Stogit (estrazione)</descrizioneRemi>
+      <valoreEnergia>857692.6923808182</valoreEnergia>
+      <codiceRemi>STENI_WTH</codiceRemi>
+      <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
       <descrizionePunto>STOGIT EROGAZIONE</descrizionePunto>
       <tipoNomina>PRE</tipoNomina>
-      <cicloNomina>C10</cicloNomina>
+      <cicloNomina>C04</cicloNomina>
+      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
+    </nomina>
+    <nomina>
+      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
+      <pcs>10.336634537618213</pcs>
+      <dataDecorrenza>05/08/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>05/08/2021 10:00:00</dataElaborazione>
+      <valoreVolume>651545.9490342046</valoreVolume>
+      <unitaMisuraVolume>SMC</unitaMisuraVolume>
+      <valoreEnergia>740826.4855907051</valoreEnergia>
+      <codiceRemi>STENI_WTH</codiceRemi>
+      <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
+      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <tipoNomina>POST</tipoNomina>
+      <cicloNomina>C07</cicloNomina>
+      <tipologiaPunto>Erogazione da stoccaggio</tipologiaPunto>
+    </nomina>
+    <nomina>
+      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
+      <pcs>10.146848226039397</pcs>
+      <dataDecorrenza>05/08/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>05/08/2021 10:00:00</dataElaborazione>
+      <valoreVolume>395471.80059912975</valoreVolume>
+      <unitaMisuraVolume>SMC</unitaMisuraVolume>
+      <valoreEnergia>127722.9977172243</valoreEnergia>
+      <codiceRemi>STENI_INJ</codiceRemi>
+      <descrizioneRemi>Stogit (immissione)</descrizioneRemi>
+      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <tipoNomina>POST</tipoNomina>
+      <cicloNomina>C11</cicloNomina>
+      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
+    </nomina>
+    <nomina>
+      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
+      <pcs>10.75234539846014</pcs>
+      <dataDecorrenza>05/08/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>05/08/2021 10:00:00</dataElaborazione>
+      <valoreVolume>812872.0614250053</valoreVolume>
+      <unitaMisuraVolume>SMC</unitaMisuraVolume>
+      <valoreEnergia>288093.2222807145</valoreEnergia>
+      <codiceRemi>STENI_WTH</codiceRemi>
+      <descrizioneRemi>Stogit (estrazione)</descrizioneRemi>
+      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <tipoNomina>PRE</tipoNomina>
+      <cicloNomina>C12</cicloNomina>
+      <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
+    </nomina>
+    <nomina>
+      <unitaMisuraEnergia>KWH</unitaMisuraEnergia>
+      <pcs>10.515203889789321</pcs>
+      <dataDecorrenza>05/08/2021 11:00:00</dataDecorrenza>
+      <dataElaborazione>05/08/2021 10:00:00</dataElaborazione>
+      <valoreVolume>275250.6787434956</valoreVolume>
+      <unitaMisuraVolume>SMC</unitaMisuraVolume>
+      <valoreEnergia>736665.6134463259</valoreEnergia>
+      <codiceRemi>STENI_INJ</codiceRemi>
+      <descrizioneRemi>Stogit (estrazione)</descrizioneRemi>
+      <descrizionePunto>STOGIT INIEZIONE</descrizionePunto>
+      <tipoNomina>PRE</tipoNomina>
+      <cicloNomina>C11</cicloNomina>
       <tipologiaPunto>Immissione a stoccaggio</tipologiaPunto>
     </nomina>
   </nomine>

@@ -12,7 +12,7 @@
 
 	<groupId>it.luca.data</groupId>
 	<artifactId>data-factory</artifactId>
-	<version>0.1.0</version>
+	<version>0.2.0</version>
 	<description>Data Factory - Spring Boot application for generating random test data</description>
 	<packaging>pom</packaging>
 	<organization>
