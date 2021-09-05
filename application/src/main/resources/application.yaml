@@ -24,20 +24,20 @@ application:
     -
       id: WEBDISP
       url: http://localhost:8080/api/v1/source/webdisp
-      className: it.luca.data.model.webdisp.WebdispPayload
+      className: it.luca.streaming.factory.app.model.webdisp.WebdispPayload
       type: xml
     -
       id: JARVIS
       url: http://localhost:8080/api/v1/source/jarvis
-      className: it.luca.data.model.jarvis.JarvisPayload
+      className: it.luca.streaming.factory.app.model.jarvis.JarvisPayload
       type: xml
     -
       id: INT002
       url: http://localhost:8080/api/v1/source/int002
-      className: it.luca.data.model.int002.Int002Payload
+      className: it.luca.streaming.factory.app.model.int002.Int002Payload
       type: json
     -
       id: CONDUZIONE
       url: http://localhost:8080/api/v1/source/conduzione
-      className: it.luca.data.model.conduzione.ConduzionePayload
+      className: it.luca.streaming.factory.app.model.conduzione.ConduzionePayload
       type: json

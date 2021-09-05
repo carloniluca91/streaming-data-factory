@@ -2,72 +2,27 @@
   <ambitoFlusso>Stoccaggio</ambitoFlusso>
   <nomeFlusso>INT006</nomeFlusso>
   <impresaMittente>1713307</impresaMittente>
-  <dataDiCreazione>05/08/2021 17:31</dataDiCreazione>
-  <numeroDati>4</numeroDati>
-  <dataProcedura>05/08/2021</dataProcedura>
-  <giornoGas>05/08/2021</giornoGas>
+  <dataDiCreazione>05/09/2021 18:08</dataDiCreazione>
+  <numeroDati>1</numeroDati>
+  <dataProcedura>05/09/2021</dataProcedura>
+  <giornoGas>05/09/2021</giornoGas>
   <listaCicli>
     <ciclo>
-      <cicloDiRiferimento>5</cicloDiRiferimento>
-      <rinominaEnergia>-40597.82852841414</rinominaEnergia>
-      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>-85080.52436172334</limiteMinimoEnergia>
-      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>-34534.0232905122</limiteMassimoEnergia>
-      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
-    </ciclo>
-    <ciclo>
-      <cicloDiRiferimento>1</cicloDiRiferimento>
-      <rinominaEnergia>63264.43228628623</rinominaEnergia>
-      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>-53044.728825502796</limiteMinimoEnergia>
-      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>71420.67619861715</limiteMassimoEnergia>
-      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
-    </ciclo>
-    <ciclo>
-      <cicloDiRiferimento>5</cicloDiRiferimento>
-      <rinominaEnergia>24681.728664061506</rinominaEnergia>
-      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>-20781.466192466498</limiteMinimoEnergia>
-      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>20630.845202022363</limiteMassimoEnergia>
-      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
-    </ciclo>
-    <ciclo>
-      <cicloDiRiferimento>12</cicloDiRiferimento>
-      <rinominaEnergia>53053.131867448246</rinominaEnergia>
-      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>62607.69627532418</limiteMinimoEnergia>
-      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>-28890.70510814547</limiteMassimoEnergia>
-      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
-    </ciclo>
-    <ciclo>
-      <cicloDiRiferimento>1</cicloDiRiferimento>
-      <rinominaEnergia>59758.94014432625</rinominaEnergia>
-      <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>62525.934399903286</limiteMinimoEnergia>
-      <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>45581.722198363015</limiteMassimoEnergia>
-      <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
-    </ciclo>
-    <ciclo>
       <cicloDiRiferimento>3</cicloDiRiferimento>
-      <rinominaEnergia>67986.53957645182</rinominaEnergia>
+      <rinominaEnergia>-77810.49250325115</rinominaEnergia>
       <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>-59738.2703845291</limiteMinimoEnergia>
+      <limiteMinimoEnergia>-53943.23904869454</limiteMinimoEnergia>
       <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>-18894.50868814098</limiteMassimoEnergia>
+      <limiteMassimoEnergia>6365.375170738655</limiteMassimoEnergia>
       <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
     </ciclo>
     <ciclo>
-      <cicloDiRiferimento>1</cicloDiRiferimento>
-      <rinominaEnergia>-47390.258753936745</rinominaEnergia>
+      <cicloDiRiferimento>2</cicloDiRiferimento>
+      <rinominaEnergia>-25037.701119328907</rinominaEnergia>
       <unitaDiMisuraRinominaEnergia>KWH</unitaDiMisuraRinominaEnergia>
-      <limiteMinimoEnergia>88672.04745016625</limiteMinimoEnergia>
+      <limiteMinimoEnergia>40026.083884805936</limiteMinimoEnergia>
       <unitaDiMisuraLimiteMinimoEnergia>KWH</unitaDiMisuraLimiteMinimoEnergia>
-      <limiteMassimoEnergia>-43502.947008446965</limiteMassimoEnergia>
+      <limiteMassimoEnergia>-23868.736638111048</limiteMassimoEnergia>
       <unitaDiMisuraLimiteMassimoEnergia>KWH</unitaDiMisuraLimiteMassimoEnergia>
     </ciclo>
   </listaCicli>

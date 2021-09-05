@@ -10,9 +10,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>it.luca.data</groupId>
-	<artifactId>data-factory</artifactId>
-	<version>0.2.0</version>
+	<groupId>it.luca.streaming</groupId>
+	<artifactId>streaming-data-factory</artifactId>
+	<version>0.3.0</version>
 	<description>Data Factory - Spring Boot application for generating random test data</description>
 	<packaging>pom</packaging>
 	<organization>
@@ -51,7 +51,8 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 
 		<jdbi.version>3.20.1</jdbi.version>
-		<java.utils.version>0.3.0</java.utils.version>
+		<java.utils.version>0.3.2</java.utils.version>
+		<data.factory.version>0.1.0</data.factory.version>
 		<jdbc.url>jdbc:postgresql://localhost:5432/${jdbc.user}?currentSchema=log</jdbc.url>
 		<jdbc.log.table>t_sample_generation_log</jdbc.log.table>
 	</properties>
@@ -93,6 +94,18 @@
 				<version>${jdbi.version}</version>
 				<scope>import</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>it.luca</groupId>
+				<artifactId>data-factory</artifactId>
+				<version>${data.factory.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>it.luca</groupId>
+				<artifactId>java-utils</artifactId>
+				<version>${java.utils.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -115,11 +128,5 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>it.luca</groupId>
-			<artifactId>java-utils</artifactId>
-			<version>${java.utils.version}</version>
-		</dependency>
 	</dependencies>
-
 </project>

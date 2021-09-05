@@ -5,19 +5,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>it.luca.data</groupId>
-        <artifactId>data-factory</artifactId>
-        <version>0.2.0</version>
+        <groupId>it.luca.streaming</groupId>
+        <artifactId>streaming-data-factory</artifactId>
+        <version>0.3.0</version>
     </parent>
 
-    <artifactId>data-model</artifactId>
-    <version>0.2.0</version>
-    <description>Data Models (POJOs)</description>
+    <artifactId>streaming-data-model</artifactId>
+    <version>0.3.0</version>
+    <description>Data Models</description>
 
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>it.luca</groupId>
+            <artifactId>java-utils</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>it.luca</groupId>
+            <artifactId>data-factory</artifactId>
         </dependency>
     </dependencies>
 
