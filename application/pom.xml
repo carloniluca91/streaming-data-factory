@@ -36,7 +36,7 @@
 
         <dependency>
             <groupId>it.luca.streaming</groupId>
-            <artifactId>streaming-data-model</artifactId>
+            <artifactId>data-model</artifactId>
             <version>0.3.0</version>
         </dependency>
 
