@@ -49,7 +49,7 @@ public class Int002Ciclo {
         return uDM4;
     }
 
-    @RandomValue(values = {"SAN SALVO ER.", "ITAL GAS STORAGE ER.", "MAZARA", "MASERA"})
+    @RandomValue(useClasspathLocator = true)
     private String descrizione;
 
     private final String tipologia = "Entry Produzione Nazionale";

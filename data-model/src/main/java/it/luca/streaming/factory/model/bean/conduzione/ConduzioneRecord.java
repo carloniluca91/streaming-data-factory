@@ -3,6 +3,7 @@ package it.luca.streaming.factory.model.bean.conduzione;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import it.luca.data.factory.annotation.MappedByField;
 import it.luca.data.factory.annotation.RandomDateTime;
 import it.luca.data.factory.annotation.RandomNumber;
 import it.luca.data.factory.annotation.RandomValue;
@@ -44,10 +45,10 @@ public class ConduzioneRecord {
     @RandomValue(values = {"I", "U"})
     private String tipoAggiornamento;
 
-    @RandomValue(values = {"BORDOLAN0", "BRUGHERIO", "MINERBIO", "SETTALA SAN P.C.", "SETTALA SAN P.E."})
+    @RandomValue(useClasspathLocator = true)
     private String ccmp;
 
-    @RandomValue(values = {"01769", "01770", "01771", "01772",  "01773"})
+    @MappedByField(fieldName = "ccmp")
     private String ncmp;
 
     @RandomDateTime(supplier = Now.class)

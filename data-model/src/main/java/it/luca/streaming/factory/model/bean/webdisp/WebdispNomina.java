@@ -3,6 +3,7 @@ package it.luca.streaming.factory.model.bean.webdisp;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import it.luca.data.factory.annotation.MappedByField;
 import it.luca.data.factory.annotation.RandomDateTime;
 import it.luca.data.factory.annotation.RandomNumber;
 import it.luca.data.factory.annotation.RandomValue;
@@ -41,13 +42,13 @@ public class WebdispNomina {
     @RandomNumber(min = 10000, max = 1000000, as = Double.class)
     private Double valoreEnergia;
 
-    @RandomValue(values = {"STENI_INJ", "STENI_WTH"})
+    @RandomValue(useClasspathLocator = true)
     private String codiceRemi;
 
-    @RandomValue(values = {"Stogit (immissione)", "Stogit (estrazione)"})
+    @MappedByField(fieldName = "codiceRemi")
     private String descrizioneRemi;
 
-    @RandomValue(values = {"STOGIT INIEZIONE", "STOGIT EROGAZIONE"})
+    @MappedByField(fieldName = "codiceRemi")
     private String descrizionePunto;
 
     @RandomValue(useClasspathLocator = true)
@@ -56,6 +57,6 @@ public class WebdispNomina {
     @RandomValue(useClasspathLocator = true)
     private String cicloNomina;
 
-    @RandomValue(values = {"Immissione a stoccaggio", "Erogazione da stoccaggio"})
+    @MappedByField(fieldName = "codiceRemi")
     private String tipologiaPunto;
 }

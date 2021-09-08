@@ -1,0 +1,2 @@
+STENI_INJ -> Immissione a stoccaggio
+STENI_WTH -> Prelievo da stoccaggio

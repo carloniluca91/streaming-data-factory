@@ -1,0 +1,2 @@
+STENI_INJ -> Stogit (immissione)
+STENI_WTH -> Stogit (prelievo)
