@@ -50,10 +50,10 @@ public class WebdispNomina {
     @RandomValue(values = {"STOGIT INIEZIONE", "STOGIT EROGAZIONE"})
     private String descrizionePunto;
 
-    @RandomValue(values = {"PRE", "POST"})
+    @RandomValue(useClasspathLocator = true)
     private String tipoNomina;
 
-    @RandomValue(values = {"C01", "C02", "C03", "C04", "C05", "C07", "C08", "C09", "C10", "C11", "C12"})
+    @RandomValue(useClasspathLocator = true)
     private String cicloNomina;
 
     @RandomValue(values = {"Immissione a stoccaggio", "Erogazione da stoccaggio"})

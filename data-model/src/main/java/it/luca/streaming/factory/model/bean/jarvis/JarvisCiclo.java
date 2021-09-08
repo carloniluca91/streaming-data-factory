@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class JarvisCiclo {
 
-    @RandomValue(values = {"G-1", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"})
+    @RandomValue(useClasspathLocator = true)
     private String cicloDiRiferimento;
 
     @RandomNumber(min = -100000, max = 100000, as = Double.class)
