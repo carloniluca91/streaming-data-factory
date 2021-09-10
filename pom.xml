@@ -54,7 +54,7 @@
 		<java.utils.version>0.3.2</java.utils.version>
 		<data.factory.version>0.3.0</data.factory.version>
 		<jdbc.url>jdbc:postgresql://localhost:5432/${jdbc.user}?currentSchema=log</jdbc.url>
-		<jdbc.log.table>t_sample_generation_log</jdbc.log.table>
+		<jdbc.log.table>t_streaming_sample_generation_log</jdbc.log.table>
 	</properties>
 
 	<build>

@@ -1,10 +1,10 @@
 -- create sequence for log table
-CREATE SEQUENCE IF NOT EXISTS sample_id;
+CREATE SEQUENCE IF NOT EXISTS streaming_sample_id;
 
 -- log table
 CREATE TABLE IF NOT EXISTS @jdbc.log.table@ (
 
-    sample_id INT NOT NULL DEFAULT NEXTVAL('sample_id'),
+    sample_id INT NOT NULL DEFAULT NEXTVAL('streaming_sample_id'),
     sample_generation_ts TIMESTAMP NOT NULL,
     sample_generation_dt DATE NOT NULL,
     dataflow_id TEXT NOT NULL,
