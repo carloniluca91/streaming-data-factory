@@ -4,7 +4,9 @@ spring:
     username: @jdbc.user@
     password: @jdbc.password@
     url: @jdbc.url@
-
+  flyway:
+    baseline-on-migrate: true
+    table: flyway_schema_history_streaming_app
 server:
   port: 8081
 

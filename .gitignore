@@ -1,7 +1,7 @@
 .idea/*
 .mvn/*
 *.iml
-annotations/target/*
 application/target/*
 data-model/target/*
-data-model/src/test/resources/samples/*
+data-model/src/test/resources/samples/*.json
+data-model/src/test/resources/samples/*.xml
